@@ -21,10 +21,7 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * Marks a field to contain properties that will be appended to the HiveConf.
- * <p/>
- * The field should be of type Map<String, String>
- * <p/>
- * Please refer to {@link com.klarna.hiverunner.HelloHiveRunner} for usage details
+ * The field should be of type Map&lt;String, String&gt;
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface HiveProperties {

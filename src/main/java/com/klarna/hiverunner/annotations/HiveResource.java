@@ -22,15 +22,12 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * Marks a field to contain test data input. The field might either be of type String, File or Path.
  * The data will be copied into the specified target file by the HiveRunner engine.
- * <p/>
- * Please refer to {@link com.klarna.hiverunner.HelloHiveRunner} for further details.
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface HiveResource {
 
     /**
      * Specifies where the data should be made available in hdfs.
-     * Please refer to {@link com.klarna.hiverunner.HelloHiveRunner} for further details.
      */
     String targetFile();
 }

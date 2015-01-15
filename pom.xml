@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.klarna</groupId>
     <artifactId>hiverunner</artifactId>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <licenses>
@@ -14,13 +15,8 @@
         </license>
     </licenses>
 
-    <scm>
-        <connection>scm:${git.repo}</connection>
-        <developerConnection>scm:${git.repo}</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-
     <properties>
+        <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -144,6 +140,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>2.5</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -155,4 +152,10 @@
             </plugin>
         </plugins>
     </build>
+    <scm>
+        <url>https://github.com/Onuchin-Artem/HiveRunner.git</url>
+        <connection>scm:git:git@github.com:Onuchin-Artem/HiveRunner.git</connection>
+        <developerConnection>scm:git:git@github.com:Onuchin-Artem/HiveRunner.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 </project>

@@ -21,7 +21,6 @@ import org.junit.rules.TemporaryFolder;
 
 /**
  * Context to run hadoop bin in a parallel JVM. Used for debugging of the HiveRunner
- * <p/>
  * NOTE: Don't forget to set the hadoop bin path property
  */
 class LocalModeContext extends StandaloneHiveServerContext {

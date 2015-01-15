@@ -29,8 +29,6 @@ import java.util.List;
  * Verifies that the database is reset to 'default' in tear down phase.
  * It seems like Hive (at least 0.11) has some static variable to store
  * represent the current set database.
- * <p/>
- * This is solved by doing a 'use default' in {@link com.klarna.hiverunner.builder.HiveShellTearable#tearDown()}
  */
 @RunWith(StandaloneHiveRunner.class)
 public class SchemaResetBetweenTestMethodsTest {
@@ -77,6 +75,4 @@ public class SchemaResetBetweenTestMethodsTest {
 
         Assert.assertEquals(expectedDatabases, actualDatabases);
     }
-
-
 }

@@ -41,7 +41,6 @@ public class HiveServerContainerTest {
     /**
      * This test shows that the split statement method is really basic.
      * The current version will not cater for semicolon within quotes etc.
-     * <p/>
      * TODO: Support quoted semicolons
      */
     @Test(expected = AssertionError.class)

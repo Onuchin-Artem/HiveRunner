@@ -34,7 +34,6 @@ import java.util.Map;
 
 /**
  * Hive Runner Reference implementation.
- * <p/>
  * All HiveRunner tests should run with the StandaloneHiveRunner
  */
 @RunWith(StandaloneHiveRunner.class)
@@ -54,7 +53,6 @@ public class HelloHiveRunner {
     /**
      * In this example, the scripts under test expects a schema to be already present in hive so
      * we do that with a setup script.
-     * <p/>
      * There may be multiple setup scripts but the order of execution is undefined.
      */
     @HiveSetupScript
@@ -63,7 +61,6 @@ public class HelloHiveRunner {
     /**
      * Create some data in the target directory. Note that the 'targetFile' references the
      * same dir as the create table statement in the script under test.
-     * <p/>
      * This example is for defining the data in line as a string.
      */
     @HiveResource(targetFile = "${hiveconf:MY.HDFS.DIR}/foo/data_from_string.csv")
@@ -72,7 +69,6 @@ public class HelloHiveRunner {
     /**
      * Create some data in the target directory. Note that the 'targetFile' references the
      * same dir as the create table statement in the script under test.
-     * <p/>
      * This example is for defining the data in in a resource file.
      */
     @HiveResource(targetFile = "${hiveconf:MY.HDFS.DIR}/foo/data_from_file.csv")
@@ -82,7 +78,6 @@ public class HelloHiveRunner {
 
     /**
      * Define the script files under test. The files will be loaded in the given order.
-     * <p/>
      * The HiveRunner instantiate and inject the HiveShell
      */
     @HiveSQL(files = {
