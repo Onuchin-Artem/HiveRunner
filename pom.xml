@@ -15,7 +15,6 @@
     </licenses>
 
     <properties>
-        <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -107,7 +106,11 @@
             <version>1.3</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.9.5</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
